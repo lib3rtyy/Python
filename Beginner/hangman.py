@@ -4,6 +4,7 @@ words = [ 'shadow', 'river', 'bliss', 'galaxy', 'puzzle', 'flame', 'wisdom', 'ec
 chosen_word = random.choice(words)
 word_display = [ '_' for _ in chosen_word]
 attempts = 10
+wrong_guesses = set()
 
 print ("Hangman    Game")
 
@@ -20,9 +21,14 @@ while attempts>0 and '_' in word_display:
             if letter == guess:
                 word_display[index] = guess
     else:
-        print(f"No letter '{guess}' in the word.")
-        attempts -=1
-        print(f"ATTEMPTS REMAINING: {attempts}")
+        if guess in wrong_guesses:
+            print(f"You already guessed '{guess}', which is not in the word")
+            print(f"ATTEMPTS REMAINING: {attempts}")
+        else:
+            print(f"No letter '{guess}' in the word.")
+            attempts -=1
+            wrong_guesses.add(guess)
+            print(f"ATTEMPTS REMAINING: {attempts}")
 
 if '_' not in word_display:
     print("You guessed the word! The word was: " +chosen_word)
