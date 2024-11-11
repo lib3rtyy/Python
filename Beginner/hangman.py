@@ -22,6 +22,7 @@ while attempts>0 and '_' in word_display:
     else:
         print(f"No letter '{guess}' in the word.")
         attempts -=1
+        print(f"ATTEMPTS REMAINING: {attempts}")
 
 if '_' not in word_display:
     print("You guessed the word! The word was: " +chosen_word)
