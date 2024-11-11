@@ -17,8 +17,8 @@ questions = [
     "answer": "A"
 },
 {
-    "prompt":"What are Santa/’s little helpers called?",
-    "options":["A. Elves", "B. Fairy/’s", "C. Gremlins", "D. Little People"],
+    "prompt":"What are Santa’s little helpers called?",
+    "options":["A. Elves", "B. Fairy’s", "C. Gremlins", "D. Little People"],
     "answer": "A"
 },
 {
@@ -63,8 +63,8 @@ questions = [
 },
 {
     "prompt":"Which color do you find at the top of a rainbow?",
-    "options":["A. Red","B. Blue","C. Yellow","D. Green"],
-    "answer": "A"
+    "options":["A. Red","B. Blue","C. Purple","D. Green"],
+    "answer": "C"
 }
 
 
