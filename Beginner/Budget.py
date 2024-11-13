@@ -67,7 +67,7 @@ def main():
                     amount = float(input("Enter the amount of expenses: "))
                     break
                 except ValueError:
-                    print("Invalid imput. Please enter a numeric value for the amoun!")
+                    print("Invalid imput. Please enter a numeric value for the amount!")
 
             today_date = date.today()
             add_expense(today_date, expenses, description, amount)
